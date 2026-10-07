@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+_site/
+.quarto/
+site_libs/
+**/*.quarto_ipynb
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
+
+/.quarto/

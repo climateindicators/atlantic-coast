@@ -1,0 +1,49 @@
+indicator:
+  name: 'A Closer Look: Land Loss Along the Atlantic Coast'
+  slug: atlantic-coast
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/atlantic-coast/index.html
+  technical_documentation: https://19january2025snapshot.epa.gov/sites/default/files/2021-04/documents/land-loss_td.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+datasets:
+- file: atlantic_coast_land_loss.csv
+  figure: Figure 1
+  figure_title: Figure 1. Land Loss Along the Atlantic Coast, 1996-2011
+  source_file: land-loss_fig-1.csv
+  source_sha256: 2195290e9f72a5f5f712d59a34848f4fbc95ea8ffe60a7284f9d1af140357f68
+  source_encoding: UTF-8
+  data_source: NOAA, 2013
+  web_update: May 2014
+  unit: Square miles
+  rows: 6
+  columns:
+  - name: region
+    type: string
+    description: Atlantic coast region, as labelled by EPA (Mid-Atlantic or Southeast)
+  - name: period
+    type: string
+    description: Cumulative period of change, start year to end year (e.g. 1996-2011)
+  - name: value
+    type: number
+    description: Cumulative net land loss over the period, square miles; negative
+      values are a net gain
+- file: atlantic_coast_land_submergence.csv
+  figure: Figure 2
+  figure_title: Figure 2. Land Submergence Along the Atlantic Coast, 1996-2011
+  source_file: land-loss_fig-2.csv
+  source_sha256: da098403de502177b32ff867b4c61abe81a8842a1d906ffd32ea7d6bdb67688f
+  source_encoding: UTF-8
+  data_source: NOAA, 2013
+  web_update: May 2014
+  unit: Square miles
+  rows: 9
+  columns:
+  - name: transition
+    type: string
+    description: Land-cover conversion to open water, as labelled by EPA
+  - name: period
+    type: string
+    description: Cumulative period of change, start year to end year (e.g. 1996-2011)
+  - name: value
+    type: number
+    description: Cumulative area converted to open water over the period, square miles

@@ -1,0 +1,15 @@
+Package: Atlantic.coast
+Title: A Closer Look: Land Loss Along the Atlantic Coast Climate Indicator: Data and Narrative Pipeline
+Depends: R (>= 4.4.0)
+License: CC-BY-SA
+Encoding: UTF-8
+Imports:
+    digest,
+    dplyr,
+    here,
+    readr,
+    readxl,
+    tibble,
+    tidyr,
+    xml2,
+    yaml
