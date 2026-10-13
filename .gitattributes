@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# EPA's files are archived byte for byte and pinned by sha256 in PROVENANCE.md
+# and data/meta.yml. Line-ending normalization would change those bytes (EPA
+# publishes CRLF) and break every hash on a fresh clone.
+data-raw/** -text
